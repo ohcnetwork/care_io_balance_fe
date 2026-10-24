@@ -1,0 +1,48 @@
+{
+  "name": "care_io_balance_fe",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Intake and output observations for CARE questionnaire groups",
+  "author": "Open Healthcare Network",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "node --import tsx --test \"src/**/*.test.ts\"",
+    "lint": "eslint .",
+    "format": "prettier --write src public/locale *.md *.json *.ts *.js",
+    "typecheck": "tsc -b",
+    "lint-fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "react-i18next": "^17.0.8"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@originjs/vite-plugin-federation": "^1.4.1",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "i18next": "^26.4.2",
+    "prettier": "^3.8.3",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tsx": "^4.19.4",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.29.1",
+    "vite": "^6.4.3"
+  },
+  "engines": {
+    "node": ">=22.9.0"
+  }
+}
